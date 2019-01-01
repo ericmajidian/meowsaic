@@ -9,6 +9,7 @@ Converts a given image into a mosaic made of cats.
 ## Requirements
 ```
 Pillow
+progress
 ```
 
 ## Usage
