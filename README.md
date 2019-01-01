@@ -1,6 +1,11 @@
 # meowsaic
 Converts a given image into a mosaic made of cats.
 
+| Input                                             | Output                                           |
+| --------------------------------------------------| ------------------------------------------------ |
+| <img src="readmeimages/grumpycat.jpeg" width=200> | <img src="readmeimages/gm_mosaic.png" width=200> |
+| 1 cat                                             | 27,649 cats                                      |
+
 ## Requirements
 ```
 Pillow
@@ -11,7 +16,7 @@ Pillow
 python3 meowsaic.py <inputImagePath> <outputImagePath> [quality]
 
 Quality determines the number of pixels per cat picture.
-Must be 1 (16x16), 2 (32x32), or 3(64x64).
+Must be 1 (16x16), 2 (32x32), or 3 (64x64).
 Defaults to 3 if not provided.
 ```
 
