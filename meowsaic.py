@@ -7,7 +7,7 @@ from progress.bar import Bar
 
 def Usage():
     print("Usage:")
-    print("\tpython3 meowsaic.py <catImagesPath> <inputImagePath> <outputImagePath> [quality]")
+    print("\tpython3 meowsaic.py <inputImagePath> <outputImagePath> [quality]")
     print("\n\tQuality determines the number of pixels per cat picture.\n"
           "\tMust be 1 (16x16), 2 (32x32), or 3 (64x64).\n"
           "\tDefaults to 3 if not provided.\n")
@@ -108,6 +108,7 @@ def getMatchingCats(tileAvgs, catColors, catFiles):
             diff[c] = (((r2-r1)*0.3)**2 +
                        ((g2-g1)*0.59)**2 +
                        ((b2-b1)*0.11)**2)
+            # 0.3 0.59 0.11
         minValue = sys.maxsize
         minIndex = len(catFiles) + 1
         for d in range(0, len(diff)):

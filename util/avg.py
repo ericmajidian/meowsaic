@@ -3,6 +3,7 @@ import os
 from PIL import Image
 
 def avg_it(img_path):
+    print(img_path)
     img = Image.open(img_path)
     w, h = img.size
     pix = img.load()
