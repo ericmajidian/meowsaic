@@ -1,5 +1,4 @@
 from PIL import Image
-import matplotlib.pyplot as plt
 import sys
 import os
 import math
