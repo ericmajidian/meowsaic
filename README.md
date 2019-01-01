@@ -21,5 +21,10 @@ Must be 1 (16x16), 2 (32x32), or 3 (64x64).
 Defaults to 3 if not provided.
 ```
 
+## Quality
+| 1                                        | 2                                         | 3                |
+| ------------------------------------------ | ---------------------------------------------- | ------------------- |
+| <img src="readmeimages/low.png" width=200> | <img src="readmeimages/medium.png" width=200>  | <img src="readmeimages/high.png" width=200> |
+
 # Acknowledgements
 * Method for determining closest-matching RGB value was adapted from Lasse Vågsæther Karlsen's and Quantic's answer to this stackoverflow question: https://stackoverflow.com/questions/1847092/given-an-rgb-value-what-would-be-the-best-way-to-find-the-closest-match-in-the-d
