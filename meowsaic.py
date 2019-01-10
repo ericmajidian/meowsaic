@@ -130,12 +130,12 @@ def createMosaic(inputImg, outputPath, quality):
 
     bar = Bar('Cats:', max=((width/tileWidth)*(height/tileWidth)))
 
-    # CON helps determine the size of the mosaic based on the quality of
-    # each cat picture and the tileWidth.
+    # CON helps determine the size of the output image based on the 
+    # quality of each cat picture and the tileWidth.
     CON = int(quality / tileWidth)   
 
     # Cat pictures are pasted onto bg.
-    bg = Image.new('RGBA', (width*CON, height*CON), (255, 255, 255, 255))
+    bg = Image.new('RGB', (width*CON, height*CON), (255, 255, 255))
 
     count = 0
     for y in range(0, height*CON, tileWidth*CON):
